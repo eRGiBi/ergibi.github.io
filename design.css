@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #071920;
+}
+.section {
+    position: relative;
+    height: 75vh;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 0.5s ease-in-out;
+ }
+
+section.front{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+.header{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.main-h1{
+    color: #fff;
+    text-align: left;
+    margin-top: 27px;
+    margin-bottom: 24px;
+    padding-top: 5px;
+    padding-left: 14%;
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Gloock', serif;
+}
+.profile-pic{
+    position: absolute;
+    height: 700px;
+    padding-left: 60%;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -1;
+}
+
+.summary{
+    padding-left: 14%;
+    margin-top: 200px;
+    font-size: 23px;
+    z-index: 1;
+    font-family: 'Gloock', serif;
+    line-height: 40px;
+}
+
+.front-logo{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    width: 200px;
+    padding-left: 17%;
+    padding-top: 5%;
+}
+
+.sec-background-image {
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    right: 1%;
+    bottom: 5%;
+    background-size: cover;
+    background-position: center;
+}
+.content {
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+.textbox {
+    margin-bottom: 10px;
+    font-family: 'Crimson Pro', serif;
+    color: white;
+}
+.logo {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.textbox h1 {
+    font-size: 44px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.textbox h2 {
+    font-size: 38px;
+    font-family: 'League Spartan', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: none;
+}
+
+.textbox p {
+    padding-top: 30px;
+    font-size: 30px;
+}
+/*-------------------------------------------------*/
+
+.section.uni{
+    opacity: 0;
+}
+.sec-background-image.uni{
+    background-image: url('images/SecUni/Faculty-of-Engineering-and-IT.jpg');
+}
+.content.uni{
+    color: white;
+    background-color: rgba(0, 0, 0, 20%);
+}
+/*-------------------------------------------------*/
+
+.section.gym{
+    opacity: 0;
+}
+.logo.gym{
+    float: right;
+    display: inline-block;
+    max-height: 20%;
+}
+.sec-background-image.gym{
+    background-image: url('images/SecGym/nagylajos.jpg');
+}
+/*-------------------------------------------------*/
+
+.section.piano{
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.video-section video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*-------------------------------------------------*/
+
+.main-list{
+    text-align: center;
+}
+
+.main-list li{
+    list-style: none;
+    margin: 60px 20px;
+}
+.main-list li a{
+    text-decoration: none;
+    color: goldenrod;
+    font-family: "Modern No. 20", serif;
+    font-size: 40px;
+
+    background-size: 30px;
+    background: content-box radial-gradient(darkgoldenrod, darkslategrey);
+    mix-blend-mode: hard-light;
+    border: 10px solid #333333;
+    border-radius: 15px;
+    outline: thick double darkgoldenrod;
+}
+
+.white-line {
+    margin-top: 50px;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: none;
+    height: 4px;
+    background-color: black;
+}
+
+footer{
+    padding-top: 100px;
+    font-size: 20px;
+    height: 25px;
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+
+
+/* --------------------------- Multi pages  ------------------*/
+.sub-header{
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)),url(images/subbanner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.sub-list{
+    flex: 1;
+    text-align: right;
+}
+.sub-list ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 20px 10px 10px;
+}
+.sub-list ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 28px;
+    font-family: 'Crimson Pro', sans-serif;
+    transition: all 0.5s ease-out;
+    padding-right: 30px;
+}
+.sub-list ul li a:hover{
+    color: darkslategrey;
+    background: none;
+    border: none;
+}
+
+.sub-h1{
+    font-size: 50px;
+    color: chocolate;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 50px;
+}
+.szoveg{
+    font-size: 25px;
+    float: left;
+    font-family: "Times New Roman", cursive;
+}
+
+/* -------------------------- Bemutatkozas ------------------------------ */
+
+.bemu{
+    width: 80%;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    float: left;
+
+}
+.bemu-div{
+    width: 500px;
+
+}
+
+.bemu img{
+    width: 500px;
+    height: 500px;
+    float: left;
+    margin-left: 3px;
+
+    border-width: 5px thick;
+    border-radius: 10px;
+    border-color: #333333;
+
+}
+/* -------------------------- Tanulmanyok ------------------------------ */
+
+.tanul{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+
+    justify-content: space-between;
+}
+
+.tanul-col{
+    width: 500px;
+    padding-left: 1px;
+    margin-bottom: 30px;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    position: relative;
+    float: left;
+}
+.tanul-col img{
+
+    width: 100%;
+    display: block;
+}
+.felirat{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-size: 25px;
+    color: azure;
+    font-weight: 500;
+
+    transition: 0.5s;
+}
+.felirat:hover{
+    background: rgba(30, 100, 150, 0.6);
+}
+.felirat h3{
+
+    width: 100%;
+    font-weight: 500;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.felirat:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+
+/* -----------------------------Hobbik -------------------------*/
+/*
+h2{
+    padding-left: 20px;
+    padding-bottom: 15px;
+
+    font-size: 40px;
+    font-family: Georgia, serif;
+    background-color: rgba(0,0,50,0.3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}*/
+
+.hobbi-szoveg{
+    text-align: justify;
+    font-size: 23px;
+    font-style: oblique;
+    font-family: "Times New Roman", sans-serif;
+
+    background-color: rgba(0,0,50,0.3);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+.img-div{
+    width: 800px;
+    height: 700px;
+}
+.hobbi-img{
+    width: 80%;
+    border-radius: 10px;
+
+}
+.gaming{
+    margin-top: 250px;
+    width: 100%;
+    margin-left: 40px;
+}
+.szobor{
+    width: 50%;
+    height: 50%;
+    margin-left: 250px;
+    margin-top: -200px;
+}
+.steak {
+    margin-left: 150px;
+}
+
+/*------------------------------------- A jovo ----------------*/
+.jovo{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+.jovo-box{
+    flex-basis: 31%;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    background: bisque;
+    padding: 20px 12px;
+
+    box-sizing: border-box;
+    font-family: "Times New Roman", sans-serif;
+    text-align: center;
+    transition: 0.5s;
+}
+.jovo-box:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+
+
+@keyframes rollin{
+    0% {
+        transform: none;
+    }
+    50%{
+        transform: translateX(80vw) rotate(720deg);
+    }
+    100%{
+        transform: translateX(-0vw) rotate(-720deg);
+
+    }
+
+}
+.ball{
+    position: relative;
+
+    animation-name: rollin;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+#wheel{
+    clear: both;
+    width: 412px;
+    height: 412px;
+    background-image: url("images/time.jpg");
+    border-radius: 834px;
+}
