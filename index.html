@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Régely Gábor Balázs - Computer Science Engineer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-
     <style>
         @import url(design.css);
         @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
@@ -14,35 +13,53 @@
 </head>
 
 <body>
-    <div>
+    <div id="front">
         <section class="section front">
 
-            <div class="sub-list">
-                <ul>
-                    <li> <a href="index.html" class="fooldal">RGB</a> </li>
-                    <li> <a href="#section uni" class="egyetem">Education</a> </li>
-                    <li> <a href="Contact.html" class="future">Contact</a> </li>
+            <div class="sub-list" >
+                <ul id="sl">
+                    <li> <a href="index.html">RGB</a> </li>
+                    <li> <a href="#section uni">Education</a> </li>
+                    <li> <a href="Contact.html">Contact</a> </li>
+                    <li><button id="theme-btn"> Change Theme </button></li>
                 </ul>
             </div>
-
             <section class="header">
-
                 <h1 class="main-h1">Gabor Regely</h1>
-
             </section>
-
-            <img src="images/me.jpg"  class="profile-pic" alt="prfl">
-
+            <img src="images/front/me.jpg" class="profile" alt="prfl">
             <div>
                 <p class="summary">An undergraduate student, who is enrolled for Computer Science Engineering,<br>specialized in the Information
                         Technology of Intelligent Systems.<br>Dedicated to software development, <br>with knowledge about algorithms, data structures and machine learning.
                 </p>
-                <a href="https://github.com/ergibi">
-                    <img src="images/github-logo.png" alt="Github Repository" class="front-logo">
-                </a>
-
+                <div class="front-table">
+                    <ul class="front-icon-list">
+                        <li><a href="https://github.com/ergibi">
+                                <img src="images/front/github-logo.png" class="front-logo" id="ghl" alt="Github Repository"></a>
+                        </li>
+                        <li><a href="mailto:site@regelygb.com">
+                                <img src="images/front/mail-icon.png" class="front-logo" id="mil" alt="Mail Icon"></a>
+                        </li>
+                        <li><a href="documents/cv.pdf" aria-label="download">
+                                <img src="images/front/cv-icon.png" class="front-logo" alt="cv icon"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </section>
+    </div>
 
+        <section class="section prog">
+            <div class="sec-background-image">
+                <div class="content prog">
+                    <div class="textbox">
+                        <h1>My programming experience</h1>
+                    </div>
+                        <ul class="prog-icon-list">
+                            <li class="prog-list-item"><img src="images/prog/logos.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
         </section>
 
         <section class="section uni" id="section uni">
@@ -58,14 +75,13 @@
                     <div class="textbox">
                         <h1>Faculty of Engineering <br> and Information Technology</h1>
                     </div>
-
                     <div class="textbox">
                         <p>University student from 2020.09.01.</p>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
+
 
     <section class="section gym">
 
@@ -89,6 +105,7 @@
     </section>
 
     <section class="section piano">
+
         <video autoplay loop muted>
             <source src="videos/piano.webm" type="video/webm">
         </video>
@@ -109,14 +126,10 @@
             </div>
         </div>
     </section>
-    <hr class="white-line">
-
+    <hr class="line">
     <footer>
         <p>RGB 2023</p>
     </footer>
-
     <script src="javascript.js"></script>
-
 </body>
-
 </html>
