@@ -38,21 +38,36 @@ function changeToDark(){
 
     toLight = true;
 }
-
 window.matchMedia('(prefers-color-scheme: dark)')
     .addEventListener('change', ({matches:isDark}) => {
         isDark ? changeToDark() : changeToLight();
     })
 
+let callback = (entries, observer)=>{
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.play();
+        }
+        else{
+            entry.target.pause();
+        }
+    });
+}
 
+let options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.15
+};
+let observer = new IntersectionObserver(callback, options);
 
 let toLight = true;
+
 
 window.addEventListener('scroll', handleScroll);
 
 tbtn.addEventListener('click', changeTheme);
 
+observer.observe(document.querySelector('#piano-video'));
+
 handleScroll();
-
-
-
