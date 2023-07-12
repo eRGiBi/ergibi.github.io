@@ -1,8 +1,7 @@
-
 const sections = document.querySelectorAll(
     'section.uni, .section.gym, section.piano, section.prog');
-const tbtn = document.getElementById('theme-btn');
-const changingFonts = document.querySelectorAll('#front, #sl li a, footer');
+const toggleTheme = document.getElementById('toggle-theme');
+const changingFonts = document.querySelectorAll('#front, #sl li a, footer, span');
 const picsToInvert = document.querySelectorAll('#ghl, #mil')
 
 function isScrolledIntoView(element) {
@@ -16,7 +15,7 @@ function isScrolledIntoView(element) {
 function handleScroll() {
     for (const section of sections) {
         if (isScrolledIntoView(section)) {
-            section.style.opacity = 1;
+            section.style.opacity = String(1);
         }
     }
 }
@@ -25,6 +24,8 @@ function changeTheme() {
 }
 
 function changeToLight(){
+    toggleTheme.classList.remove('bi-moon-fill');
+    toggleTheme.classList.add('bi-brightness-high-fill');
     document.body.style.backgroundColor = 'whitesmoke';
     picsToInvert.forEach(pic => {pic.style.filter="invert(100%)";})
     changingFonts.forEach(anchor => {anchor.style.color = "black";});
@@ -32,11 +33,17 @@ function changeToLight(){
     toLight = false;
 }
 function changeToDark(){
+    toggleTheme.classList.remove('bi-brightness-high-fill');
+    toggleTheme.classList.add('bi-moon-fill');
     document.body.style.backgroundColor = '#071920';
     picsToInvert.forEach(pic => {pic.style.filter="invert(0%)";})
     changingFonts.forEach(anchor => {anchor.style.color = "whitesmoke";});
 
     toLight = true;
+}
+
+if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
+    changeToLight();
 }
 window.matchMedia('(prefers-color-scheme: dark)')
     .addEventListener('change', ({matches:isDark}) => {
@@ -53,6 +60,11 @@ let callback = (entries, observer)=>{
         }
     });
 }
+function elementResize(){
+    if (window.innerWidth < 1000){
+
+    }
+}
 
 let options = {
     root: null,
@@ -63,10 +75,9 @@ let observer = new IntersectionObserver(callback, options);
 
 let toLight = true;
 
-
 window.addEventListener('scroll', handleScroll);
-
-tbtn.addEventListener('click', changeTheme);
+window.addEventListener("resize", elementResize);
+toggleTheme.addEventListener('click', changeTheme);
 
 observer.observe(document.querySelector('#piano-video'));
 
