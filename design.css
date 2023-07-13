@@ -161,6 +161,7 @@ section.front{
     overflow: hidden;
     margin-left: 1%;
     margin-right: 1%;
+
 }
 .video-section video {
     position: absolute;
@@ -170,15 +171,7 @@ section.front{
     height: 100%;
     object-fit: cover;
 }
-/*@media (max-width: 1000px) {*/
-/*    video {*/
-/*        display: none;*/
-/*    }*/
-/*    #section.piano{*/
-/*        background: url(images/favicon.png);*/
-/*        background-size: cover;*/
-/*    }*/
-/*}*/
+
 /*-------------------------------------------------*/
 
 .line {

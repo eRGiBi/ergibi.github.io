@@ -66,6 +66,19 @@ function elementResize(){
     }
 }
 
+// const playPromise = document.getElementById('#video').play();
+//
+// if (playPromise !== undefined) {
+//     playPromise.then(_ => {
+//         // Automatic playback started!
+//         // Show playing UI.
+//     })
+//         .catch(error => {
+//             document.getElementById('piano-background')
+//                 .style.backgroundImage =  'url("images/me.jpg"';
+//         });
+// }
+
 let options = {
     root: null,
     rootMargin: '0px',
