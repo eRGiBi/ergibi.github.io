@@ -222,3 +222,20 @@ footer{
     background: none;
     border: none;
 }
+
+
+@media (max-width: 1100px){
+    .front-table{
+        /*display: flex;*/
+        /*flex-wrap: wrap;*/
+        /*position: absolute;*/
+        /*align-items: center;*/
+        /*text-align: center;*/
+        /*padding-bottom: 30px;*/
+
+    }
+    .front-logo{
+        float: none;
+    }
+
+}
