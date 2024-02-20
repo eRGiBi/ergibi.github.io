@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll(
-    'section.uni, .section.gym, section.piano, section.prog');
+    'section.art, section.uni, .section.gym, section.piano, section.prog');
 const toggleTheme = document.getElementById('toggle-theme');
 const changingFonts = document.querySelectorAll('#front, #sl li a, footer, span');
 const picsToInvert = document.querySelectorAll('#ghl, #mil')
