@@ -248,3 +248,25 @@ footer{
     }
 
 }
+/* ---------------------------------------------*/
+
+.cor{
+    position: relative;
+    padding-left: 10vh;
+    padding-top: 50px;
+}
+.cor a{
+    font-size: 40px;
+}
+.cor-head{
+    font-size: 40px;
+    padding-top: 20px;
+}
+.cor ul{
+    list-style-type: none;
+}
+.cor ul li{
+    padding-top: 3vh;
+    padding-left: 16vh;
+    font-size: 20px;
+}

@@ -1,7 +1,7 @@
 const sections = document.querySelectorAll(
     'section.art, section.uni, .section.gym, section.piano, section.prog');
 const toggleTheme = document.getElementById('toggle-theme');
-const changingFonts = document.querySelectorAll('#front, #sl li a, footer, span');
+const changingFonts = document.querySelectorAll('#front, #sl li a, footer, span, #cor');
 const picsToInvert = document.querySelectorAll('#ghl, #mil')
 
 function isScrolledIntoView(element) {
