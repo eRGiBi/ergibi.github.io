@@ -44,11 +44,13 @@ section.front{
 
 .summary{
     padding-left: 14%;
-    margin-top: 200px;
+    padding-right: 40%;
+    margin-top: 120px;
     font-size: 23px;
     z-index: 1;
     font-family: 'Gloock', serif;
     line-height: 40px;
+
 }
 
 .front-icon-list{
