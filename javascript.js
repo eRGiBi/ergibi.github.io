@@ -30,6 +30,8 @@ function changeToLight(){
     picsToInvert.forEach(pic => {pic.style.filter="invert(100%)";})
     changingFonts.forEach(anchor => {anchor.style.color = "black";});
 
+    localStorage.setItem("theme", "light");
+
     toLight = false;
 }
 function changeToDark(){
@@ -39,8 +41,16 @@ function changeToDark(){
     picsToInvert.forEach(pic => {pic.style.filter="invert(0%)";})
     changingFonts.forEach(anchor => {anchor.style.color = "whitesmoke";});
 
+    localStorage.setItem("theme", "dark");
+
     toLight = true;
 }
+// Check if there's a preference stored in local storage
+document.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem("theme") === "light") {
+        changeToLight();
+    }
+});
 
 if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
     changeToLight();
