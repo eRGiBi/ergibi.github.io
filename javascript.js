@@ -70,9 +70,26 @@ let callback = (entries, observer)=>{
         }
     });
 }
-function elementResize(){
-    if (window.innerWidth < 1000){
 
+function elementResize(){
+
+
+    if (window.innerWidth < 1000){
+        document.getElementById("summary").style.textAlign = 'center';
+        document.getElementById("summary").style.margin = '10wh 10wh 10wh 10wh';
+        document.getElementById("summary").style.padding = '10wh 10wh 10wh 10wh';
+
+
+        document.getElementById("sub-list").style.textAlign = 'center';
+        document.getElementById("sub-list").style.margin = '0 auto';
+        document.getElementById("sub-list-elem").style.padding = '10wh 10wh 10wh 10wh';
+        document.getElementById("sub-list-elem").style.margin = '10wh 10wh 10wh 10wh';
+
+    } else {
+
+        document.getElementById("summary").style.textAlign = 'left';
+
+        document.getElementById("sub-list").style.textAlign = 'right';
     }
 }
 
