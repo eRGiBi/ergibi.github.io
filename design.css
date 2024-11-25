@@ -45,7 +45,7 @@ section.front{
 
 .summary{
     padding-left: 14%;
-    padding-right: 40%;
+    padding-right: 35%;
     margin-top: 120px;
     font-size: 23px;
     z-index: 1;
@@ -57,7 +57,7 @@ section.front{
 .front-icon-list{
     list-style-type: none;
     padding-left: 12%;
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 .front-logo{
