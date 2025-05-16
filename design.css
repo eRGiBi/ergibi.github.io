@@ -216,7 +216,7 @@ section.front{
 }
 /*----------------------Courses---------------------------*/
 
-#cor {
+#cour {
     font-size: 20px;
     padding-left: 5%;
     
@@ -224,6 +224,13 @@ section.front{
 #cor.li {
     padding: 20px;
 }
+
+#cor-title {
+    padding-top: 3%;
+    padding-left: 2%;
+    font-size: 23px;
+}
+
 
 #cor-list-title {
     padding-left: 2%;

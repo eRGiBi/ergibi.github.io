@@ -1,7 +1,7 @@
 const sections = document.querySelectorAll(
     'section.art, section.uni, .section.gym, section.piano, section.prog');
 const toggleTheme = document.getElementById('toggle-theme');
-const changingFonts = document.querySelectorAll('#front, #sl li a, footer, span, #cor, courses, #cor-list-title');
+const changingFonts = document.querySelectorAll('#front, #sl li a, footer, span, #cour, courses, #cor-title, #cor-list-title');
 const picsToInvert = document.querySelectorAll('#ghl, #mil')
 
 function isScrolledIntoView(element) {
@@ -45,7 +45,7 @@ function changeToDark(){
 
     toLight = true;
 }
-// Check if there's a preference stored in local storage
+// Check for preference
 document.addEventListener("DOMContentLoaded", function() {
     if (localStorage.getItem("theme") === "light") {
         changeToLight();
@@ -73,22 +73,19 @@ let callback = (entries, observer)=>{
 
 function elementResize(){
 
-
     if (window.innerWidth < 1000){
         document.getElementById("summary").style.textAlign = 'center';
         document.getElementById("summary").style.margin = '10wh 10wh 10wh 10wh';
         document.getElementById("summary").style.padding = '10wh 10wh 10wh 10wh';
 
-
         document.getElementById("sub-list").style.textAlign = 'center';
         document.getElementById("sub-list").style.margin = '0 auto';
+        
         document.getElementById("sub-list-elem").style.padding = '10wh 10wh 10wh 10wh';
         document.getElementById("sub-list-elem").style.margin = '10wh 10wh 10wh 10wh';
 
     } else {
-
         document.getElementById("summary").style.textAlign = 'left';
-
         document.getElementById("sub-list").style.textAlign = 'right';
     }
 }
